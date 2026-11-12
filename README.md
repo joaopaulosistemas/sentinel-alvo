@@ -47,7 +47,7 @@ MessageDigest md = MessageDigest.getInstance("MD5");
 ```bash
 pip install -r requirements.txt
 python3 inventario.py ../sentinel        # atualiza regras.json
-python3 verificar.py --sentinel ../sentinel --exigir-cobertura 186
+python3 verificar.py --sentinel ../sentinel --exigir-cobertura 188
 ```
 
 No GitHub Actions o Sentinel é privado: crie o secret `SENTINEL_TOKEN` (leitura de conteúdo em

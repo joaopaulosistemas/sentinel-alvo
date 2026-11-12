@@ -1,7 +1,7 @@
 """Escreve um par de casos (vulnerável e correto) com a marca de comentário certa para cada extensão."""
 import os
 CM = {'html': '<!-- {} -->', 'xml': '<!-- {} -->', 'css': '/* {} */', 'scss': '/* {} */', 'sql': '-- {}',
-      'properties': '# {}', 'yml': '# {}', 'yaml': '# {}', 'ts': '// {}', 'tsx': '// {}', 'java': '// {}',
+      'properties': '# {}', 'yml': '# {}', 'yaml': '# {}', 'ts': '// {}', 'spec.ts': '// {}', 'tsx': '// {}', 'java': '// {}',
       'vue': '<!-- {} -->', 'kt': '// {}', 'json': '// {}', 'ejs': '<%# {} %>', 'jsp': '<%-- {} --%>'}
 
 

@@ -1,0 +1,5 @@
+services:
+  app:
+    image: exemplo/app:1.4.2
+    # alvo: sentinel-compose-network-host
+    network_mode: host

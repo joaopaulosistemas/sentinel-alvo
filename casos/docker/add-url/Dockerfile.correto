@@ -1,0 +1,6 @@
+# correto: sentinel-docker-add-url
+FROM eclipse-temurin:21-jre
+WORKDIR /app
+COPY app.jar /app/app.jar
+COPY pacote.tar.gz /tmp/
+USER 1001

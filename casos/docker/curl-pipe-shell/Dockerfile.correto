@@ -1,0 +1,6 @@
+# correto: sentinel-docker-curl-pipe-shell
+FROM eclipse-temurin:21-jre
+WORKDIR /app
+COPY app.jar /app/app.jar
+RUN curl -fsSLo /tmp/instalar.sh https://get.exemplo.sh/instalar && sha256sum -c instalar.sha256 && sh /tmp/instalar.sh
+USER 1001

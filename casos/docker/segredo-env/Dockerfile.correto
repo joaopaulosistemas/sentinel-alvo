@@ -1,0 +1,6 @@
+# correto: sentinel-docker-segredo-em-env
+FROM eclipse-temurin:21-jre
+WORKDIR /app
+COPY app.jar /app/app.jar
+ENV DB_HOST=banco.interno
+USER 1001

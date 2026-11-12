@@ -1,0 +1,6 @@
+# correto: sentinel-compose-network-host
+services:
+  app:
+    image: exemplo/app:1.4.2
+    ports:
+      - "8080:8080"

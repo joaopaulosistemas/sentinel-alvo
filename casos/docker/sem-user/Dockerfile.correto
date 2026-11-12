@@ -1,0 +1,6 @@
+# correto: sentinel-docker-sem-user
+FROM eclipse-temurin:21-jre
+WORKDIR /app
+COPY app.jar /app/app.jar
+USER 1001
+CMD ["java", "-jar", "app.jar"]

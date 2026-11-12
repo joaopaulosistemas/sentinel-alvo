@@ -1,0 +1,6 @@
+FROM eclipse-temurin:21-jre
+WORKDIR /app
+COPY app.jar /app/app.jar
+# alvo: sentinel-docker-segredo-em-env
+ENV DB_PASSWORD=Adm1n#2024
+USER 1001

@@ -1,0 +1,4 @@
+FROM ubuntu:22.04
+# alvo: sentinel-docker-sudo
+RUN sudo apt-get install -y --no-install-recommends curl
+USER 1001

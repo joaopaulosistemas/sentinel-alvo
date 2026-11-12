@@ -1,0 +1,6 @@
+# correto: sentinel-compose-segredo-em-env
+services:
+  app:
+    image: exemplo/app:1.4.2
+    environment:
+      POSTGRES_PASSWORD_FILE: /run/secrets/db_password

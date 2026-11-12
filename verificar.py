@@ -70,12 +70,11 @@ def main():
     fp_conhecidos = lista(os.path.join(raiz, "falsos-positivos.txt"))
 
     desconhecidas = sorted({i for i, _, _ in alvos + corretos} - regras)
-    nao_pegou, ok = [], set()
+    nao_pegou = []
     for rid, arq, n in alvos:
-        if any(i == rid and f == arq and n < l <= n + JANELA for i, f, l in achados):
-            ok.add(rid)
-        else:
+        if not any(i == rid and f == arq and n < l <= n + JANELA for i, f, l in achados):
             nao_pegou.append((rid, arq, n))
+    ok = {r for r, _, _ in alvos} - {r for r, _, _ in nao_pegou}   # pegou TODOS os exemplos da regra
     falsos = sorted((i, f, l) for i, f, l in achados for rid, arq, _ in corretos if i == rid and f == arq)
     fp_novos = [(i, f, l) for i, f, l in falsos if i not in fp_conhecidos]
     fp_curados = sorted(fp_conhecidos - {i for i, _, _ in falsos})

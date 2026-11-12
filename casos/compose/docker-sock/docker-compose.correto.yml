@@ -1,0 +1,6 @@
+# correto: sentinel-compose-docker-sock
+services:
+  app:
+    image: exemplo/app:1.4.2
+    volumes:
+      - dados:/var/lib/app

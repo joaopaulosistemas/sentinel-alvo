@@ -1,0 +1,5 @@
+# correto: sentinel-compose-privileged
+services:
+  app:
+    image: exemplo/app:1.4.2
+    read_only: true

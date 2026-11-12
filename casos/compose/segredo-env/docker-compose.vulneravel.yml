@@ -1,0 +1,6 @@
+services:
+  app:
+    image: exemplo/app:1.4.2
+    environment:
+    # alvo: sentinel-compose-segredo-em-env
+      POSTGRES_PASSWORD: admin123

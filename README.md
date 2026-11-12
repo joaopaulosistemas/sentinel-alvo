@@ -29,10 +29,14 @@ MessageDigest md = MessageDigest.getInstance("MD5");
 
 ## Estado
 
-- 311 regras no Sentinel (`regras.json`, gerado por `inventario.py`); **52 com caso** (Java e TypeScript), as outras em `pendentes.txt`.
-- 48 pegam o exemplo vulnerável. **4 lacunas** (`lacunas.txt`): `zip-slip` (não vê `ZipEntry e;` declarado antes do laço),
-  `open-redirect-spring` (depende do nome da variável: `destino` passa), `api-jwt-chave-fixa` (não cobre
-  `signWith(alg, "literal")`) e `ssrf-url-do-parametro` (exige a URL como parâmetro do método).
+- 311 regras no Sentinel (`regras.json`, gerado por `inventario.py`); **73 com caso** (Java, TypeScript, Dockerfile, Compose e
+  Kubernetes), as outras 238 em `pendentes.txt`.
+- 68 pegam o exemplo vulnerável. **5 lacunas** (`lacunas.txt`):
+  - `zip-slip`: não vê `ZipEntry e;` declarado antes do laço;
+  - `open-redirect-spring`: depende do nome da variável (`destino` passa);
+  - `api-jwt-chave-fixa`: não cobre `signWith(alg, "literal")`;
+  - `ssrf-url-do-parametro`: exige a URL como parâmetro do método;
+  - `docker-imagem-latest`: só analisa o arquivo chamado exatamente `Dockerfile` (`Dockerfile.prod` passa).
 - **2 falsos positivos** (`falsos-positivos.txt`): `open-redirect` e `servlet-path-traversal` marcam o código com a
   defesa recomendada (validar o destino; `getCanonicalFile()` + `startsWith`).
 
@@ -48,7 +52,7 @@ MessageDigest md = MessageDigest.getInstance("MD5");
 ```bash
 pip install -r requirements.txt
 python3 inventario.py ../sentinel        # atualiza regras.json
-python3 verificar.py --sentinel ../sentinel --exigir-cobertura 52
+python3 verificar.py --sentinel ../sentinel --exigir-cobertura 73
 ```
 
 No GitHub Actions o Sentinel é privado: crie o secret `SENTINEL_TOKEN` (leitura de conteúdo em

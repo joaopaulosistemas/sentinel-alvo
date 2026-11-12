@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app
+spec:
+  replicas: 2
+  selector:
+    matchLabels: {app: app}
+  template:
+    metadata:
+      labels: {app: app}
+    spec:
+      volumes:
+        - name: dados
+          # alvo: sentinel-k8s-hostpath
+          hostPath:
+            path: /var/lib/dados
+      containers:
+        - name: app
+          image: registry.exemplo.com/app:1.4.2

@@ -1,0 +1,4 @@
+# correto: sentinel-docker-apt-update-sozinho
+FROM ubuntu:22.04
+RUN apt-get update && apt-get install -y --no-install-recommends curl
+USER 1001

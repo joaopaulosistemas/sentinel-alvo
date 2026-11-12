@@ -35,4 +35,4 @@ jobs:
           python3 inventario.py sentinel
           git diff --exit-code regras.json || { echo "::error title=Inventário::regras.json está desatualizado; rode inventario.py e comite"; exit 1; }
       - name: Cada exemplo é pego (e o correto não é)
-        run: python3 verificar.py --sentinel sentinel --exigir-cobertura 253
+        run: python3 verificar.py --sentinel sentinel --exigir-cobertura 310

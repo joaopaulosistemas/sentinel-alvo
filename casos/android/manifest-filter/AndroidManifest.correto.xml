@@ -1,0 +1,8 @@
+<!-- correto: sentinel-android-manifest-intent-filter-implicito -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <application>
+    <activity android:name=".Tela" android:exported="false">
+      <intent-filter><action android:name="android.intent.action.VIEW"/></intent-filter>
+    </activity>
+  </application>
+</manifest>

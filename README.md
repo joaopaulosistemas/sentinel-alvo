@@ -31,7 +31,7 @@ MessageDigest md = MessageDigest.getInstance("MD5");
 
 - 311 regras no Sentinel (`regras.json`, gerado por `inventario.py`); **311 com caso** (Java, TypeScript, React, Angular, HTML/CSS, Spring, Dockerfile, Compose e
   Kubernetes), as outras 154 em `pendentes.txt`.
-- As 157 pegam o exemplo vulnerável e deixam o correto passar; `lacunas.txt` e `falsos-positivos.txt` estão vazias.
+- As 310 pegam o exemplo vulnerável e deixam o correto passar; `lacunas.txt` e `falsos-positivos.txt` estão vazias (a lacuna de `android-modo-mundo` é corrigida na PR de regras seguinte).
 - Histórico: os casos já acharam 7 lacunas e 2 falsos positivos nas regras, corrigidos no Sentinel (PRs #231 e #236);
   este verificador confirmou cada correção.
 

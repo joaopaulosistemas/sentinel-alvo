@@ -1,0 +1,6 @@
+<!-- correto: sentinel-mybatis-cifrao-sql -->
+<mapper namespace="alvo.ClienteMapper">
+  <select id="porNome" resultType="map">
+    select id from clientes where nome = #{nome}
+  </select>
+</mapper>

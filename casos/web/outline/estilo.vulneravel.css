@@ -1,0 +1,4 @@
+button:focus {
+  /* alvo: sentinel-fe-outline-removido */
+  outline: none;
+}

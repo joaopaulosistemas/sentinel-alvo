@@ -1,0 +1,6 @@
+<mapper namespace="alvo.ClienteMapper">
+  <select id="porNome" resultType="map">
+    <!-- alvo: sentinel-mybatis-cifrao-sql -->
+    select id from clientes where nome = '${nome}'
+  </select>
+</mapper>

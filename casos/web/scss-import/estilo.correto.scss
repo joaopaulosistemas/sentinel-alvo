@@ -1,0 +1,3 @@
+/* correto: sentinel-scss-import-obsoleto */
+@use "variaveis" as v;
+.a { color: v.$cor; }

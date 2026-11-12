@@ -1,0 +1,4 @@
+/* correto: sentinel-fe-100vh */
+.hero {
+  height: 100dvh;
+}

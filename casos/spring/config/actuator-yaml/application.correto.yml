@@ -1,0 +1,6 @@
+# correto: sentinel-spring-actuator-exposto-yaml
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

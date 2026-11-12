@@ -29,9 +29,9 @@ MessageDigest md = MessageDigest.getInstance("MD5");
 
 ## Estado
 
-- 311 regras no Sentinel (`regras.json`, gerado por `inventario.py`); **104 com caso** (Java, TypeScript, Dockerfile, Compose e
-  Kubernetes), as outras 207 em `pendentes.txt`.
-- As 104 pegam o exemplo vulnerável e deixam o correto passar; `lacunas.txt` e `falsos-positivos.txt` estão vazias.
+- 311 regras no Sentinel (`regras.json`, gerado por `inventario.py`); **157 com caso** (Java, TypeScript, React, Angular, HTML/CSS, Spring, Dockerfile, Compose e
+  Kubernetes), as outras 154 em `pendentes.txt`.
+- As 157 pegam o exemplo vulnerável e deixam o correto passar; `lacunas.txt` e `falsos-positivos.txt` estão vazias.
 - Histórico: os casos já acharam 7 lacunas e 2 falsos positivos nas regras, corrigidos no Sentinel (PRs #231 e #236);
   este verificador confirmou cada correção.
 
@@ -47,7 +47,7 @@ MessageDigest md = MessageDigest.getInstance("MD5");
 ```bash
 pip install -r requirements.txt
 python3 inventario.py ../sentinel        # atualiza regras.json
-python3 verificar.py --sentinel ../sentinel --exigir-cobertura 104
+python3 verificar.py --sentinel ../sentinel --exigir-cobertura 157
 ```
 
 No GitHub Actions o Sentinel é privado: crie o secret `SENTINEL_TOKEN` (leitura de conteúdo em

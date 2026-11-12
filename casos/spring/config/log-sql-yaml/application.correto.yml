@@ -1,0 +1,4 @@
+# correto: sentinel-jpa-log-sql-detalhado-yaml
+logging:
+  level:
+    org.hibernate.SQL: WARN

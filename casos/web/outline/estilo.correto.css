@@ -1,0 +1,4 @@
+/* correto: sentinel-fe-outline-removido */
+button:focus {
+  outline: 2px solid #1a73e8;
+}

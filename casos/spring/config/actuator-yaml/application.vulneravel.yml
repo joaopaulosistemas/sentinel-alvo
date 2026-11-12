@@ -1,0 +1,6 @@
+management:
+  endpoints:
+    web:
+      # alvo: sentinel-spring-actuator-exposto-yaml
+      exposure:
+        include: "*"

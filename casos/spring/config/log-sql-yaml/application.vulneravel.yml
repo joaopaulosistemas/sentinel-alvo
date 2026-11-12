@@ -1,0 +1,4 @@
+logging:
+  level:
+    # alvo: sentinel-jpa-log-sql-detalhado-yaml
+    org.hibernate.SQL: DEBUG

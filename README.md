@@ -31,11 +31,9 @@ MessageDigest md = MessageDigest.getInstance("MD5");
 
 - 311 regras no Sentinel (`regras.json`, gerado por `inventario.py`); **104 com caso** (Java, TypeScript, Dockerfile, Compose e
   Kubernetes), as outras 207 em `pendentes.txt`.
-- 102 pegam o exemplo vulnerável e deixam o correto passar. **2 lacunas** em `lacunas.txt`:
-  `int-httpclient-sem-timeout` (só o `HttpClient` do JDK; o do Apache passa) e `int-axios-sem-timeout`
-  (só `axios.create`; `axios.get(url)` direto passa). `falsos-positivos.txt` está vazia.
-- Histórico: o primeiro lote achou 5 lacunas e 2 falsos positivos, corrigidos no Sentinel (PR #231), e este
-  verificador confirmou a correção.
+- As 104 pegam o exemplo vulnerável e deixam o correto passar; `lacunas.txt` e `falsos-positivos.txt` estão vazias.
+- Histórico: os casos já acharam 7 lacunas e 2 falsos positivos nas regras, corrigidos no Sentinel (PRs #231 e #236);
+  este verificador confirmou cada correção.
 
 ## Limites (leia antes de confiar no verde)
 

@@ -1,0 +1,3473 @@
+[
+ {
+  "id": "sentinel-boas-java-recurso-sem-try-with-resources",
+  "pacote": "core-boas-praticas",
+  "arquivo": "audit-rules/packs/core-boas-praticas/rules/sentinel-boas-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-772",
+  "taint": false
+ },
+ {
+  "id": "sentinel-boas-spring-transactional-no-controller",
+  "pacote": "core-boas-praticas",
+  "arquivo": "audit-rules/packs/core-boas-praticas/rules/sentinel-boas-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-boas-spring-mensagem-de-excecao-ao-cliente",
+  "pacote": "core-boas-praticas",
+  "arquivo": "audit-rules/packs/core-boas-praticas/rules/sentinel-boas-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-209",
+  "taint": false
+ },
+ {
+  "id": "sentinel-boas-spring-value-espalhado",
+  "pacote": "core-boas-praticas",
+  "arquivo": "audit-rules/packs/core-boas-praticas/rules/sentinel-boas-java.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-boas-ts-json-sem-validacao",
+  "pacote": "core-boas-praticas",
+  "arquivo": "audit-rules/packs/core-boas-praticas/rules/sentinel-boas-ts.yml",
+  "linguagens": [
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-20",
+  "taint": false
+ },
+ {
+  "id": "sentinel-boas-react-fetch-em-effect",
+  "pacote": "core-boas-praticas",
+  "arquivo": "audit-rules/packs/core-boas-praticas/rules/sentinel-boas-ts.yml",
+  "linguagens": [
+   "typescript",
+   "javascript"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-boas-ng-componente-nao-standalone",
+  "pacote": "core-boas-praticas",
+  "arquivo": "audit-rules/packs/core-boas-praticas/rules/sentinel-boas-ts.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-boas-ts-strict-desligado",
+  "pacote": "core-boas-praticas",
+  "arquivo": "audit-rules/packs/core-boas-praticas/rules/sentinel-boas-tsconfig.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ng-detectchanges-manual",
+  "pacote": "core-corporativo",
+  "arquivo": "audit-rules/packs/core-corporativo/rules/sentinel-padroes-angular.yml",
+  "linguagens": [
+   "typescript"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ng-componente-sem-onpush",
+  "pacote": "core-corporativo",
+  "arquivo": "audit-rules/packs/core-corporativo/rules/sentinel-padroes-angular.yml",
+  "linguagens": [
+   "typescript"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ee-catch-relanca-sem-causa",
+  "pacote": "core-corporativo",
+  "arquivo": "audit-rules/packs/core-corporativo/rules/sentinel-padroes-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-755",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ee-lanca-excecao-generica",
+  "pacote": "core-corporativo",
+  "arquivo": "audit-rules/packs/core-corporativo/rules/sentinel-padroes-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ee-ejb-sem-interface",
+  "pacote": "core-corporativo",
+  "arquivo": "audit-rules/packs/core-corporativo/rules/sentinel-padroes-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ee-initialcontext-direto",
+  "pacote": "core-corporativo",
+  "arquivo": "audit-rules/packs/core-corporativo/rules/sentinel-padroes-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ee-dinheiro-ponto-flutuante",
+  "pacote": "core-corporativo",
+  "arquivo": "audit-rules/packs/core-corporativo/rules/sentinel-padroes-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-681",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ee-log-dado-pessoal",
+  "pacote": "core-corporativo",
+  "arquivo": "audit-rules/packs/core-corporativo/rules/sentinel-padroes-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-532",
+  "taint": false
+ },
+ {
+  "id": "sentinel-sqlnorma-constraint-fora-do-padrao",
+  "pacote": "core-corporativo",
+  "arquivo": "audit-rules/packs/core-corporativo/rules/sentinel-padroes-sql.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-sqlnorma-indice-fora-do-padrao",
+  "pacote": "core-corporativo",
+  "arquivo": "audit-rules/packs/core-corporativo/rules/sentinel-padroes-sql.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-sqlnorma-trigger-fora-do-padrao",
+  "pacote": "core-corporativo",
+  "arquivo": "audit-rules/packs/core-corporativo/rules/sentinel-padroes-sql.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-sql-select-estrela-arquivo",
+  "pacote": "core-corporativo",
+  "arquivo": "audit-rules/packs/core-corporativo/rules/sentinel-padroes-sql.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-sql-like-curinga-inicial-arquivo",
+  "pacote": "core-corporativo",
+  "arquivo": "audit-rules/packs/core-corporativo/rules/sentinel-padroes-sql.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ng-bypass-security",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-angular.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-79",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ng-nativeelement-html",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-angular.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-79",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ng-dom-direto",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-angular.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ng-http-any",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-angular.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ng-deep",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-angular.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ng-ngfor-sem-trackby",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-angular.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ng-chamada-no-template",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-angular.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-camadas-componente-injeta-httpclient",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-camadas-angular.yml",
+  "linguagens": [
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-css-fonte-em-px",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-css.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-scss-import-obsoleto",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-css.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-fe-img-sem-alt",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-frontend-a11y.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-fe-click-sem-role",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-frontend-a11y.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-fe-target-blank",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-frontend-a11y.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-1022",
+  "taint": false
+ },
+ {
+  "id": "sentinel-fe-html-sem-lang",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-frontend-a11y.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-fe-zoom-bloqueado",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-frontend-a11y.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-fe-outline-removido",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-frontend-a11y.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-fe-100vh",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-frontend-a11y.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-html-handler-inline",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-html.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "CWE-79",
+  "taint": false
+ },
+ {
+  "id": "sentinel-html-script-http",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-html.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-319",
+  "taint": false
+ },
+ {
+  "id": "sentinel-html-script-sem-sri",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-html.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-353",
+  "taint": false
+ },
+ {
+  "id": "sentinel-mem-setinterval-sem-clear",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-memoria-front.yml",
+  "linguagens": [
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-401",
+  "taint": false
+ },
+ {
+  "id": "sentinel-mem-addeventlistener-sem-remove",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-memoria-front.yml",
+  "linguagens": [
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-401",
+  "taint": false
+ },
+ {
+  "id": "sentinel-mem-subscribe-sem-desinscrever",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-memoria-front.yml",
+  "linguagens": [
+   "typescript"
+  ],
+  "severidade": "INFO",
+  "cwe": "CWE-401",
+  "taint": false
+ },
+ {
+  "id": "sentinel-mem-react-effect-sem-cleanup",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-memoria-react.yml",
+  "linguagens": [
+   "typescript",
+   "javascript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-401",
+  "taint": false
+ },
+ {
+  "id": "sentinel-perf-await-em-laco",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-performance.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-perf-consulta-em-laco",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-performance.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-react-dangerously",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-react.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-79",
+  "taint": false
+ },
+ {
+  "id": "sentinel-react-componente-classe",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-react.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-react-estado-derivado",
+  "pacote": "core-frontend",
+  "arquivo": "audit-rules/packs/core-frontend/rules/sentinel-react.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-compose-privileged",
+  "pacote": "core-iac",
+  "arquivo": "audit-rules/packs/core-iac/rules/sentinel-compose-k8s.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-250",
+  "taint": false
+ },
+ {
+  "id": "sentinel-compose-docker-sock",
+  "pacote": "core-iac",
+  "arquivo": "audit-rules/packs/core-iac/rules/sentinel-compose-k8s.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-250",
+  "taint": false
+ },
+ {
+  "id": "sentinel-compose-network-host",
+  "pacote": "core-iac",
+  "arquivo": "audit-rules/packs/core-iac/rules/sentinel-compose-k8s.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-668",
+  "taint": false
+ },
+ {
+  "id": "sentinel-compose-segredo-em-env",
+  "pacote": "core-iac",
+  "arquivo": "audit-rules/packs/core-iac/rules/sentinel-compose-k8s.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-798",
+  "taint": false
+ },
+ {
+  "id": "sentinel-k8s-host-network",
+  "pacote": "core-iac",
+  "arquivo": "audit-rules/packs/core-iac/rules/sentinel-compose-k8s.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-250",
+  "taint": false
+ },
+ {
+  "id": "sentinel-k8s-escalada-de-privilegio",
+  "pacote": "core-iac",
+  "arquivo": "audit-rules/packs/core-iac/rules/sentinel-compose-k8s.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-269",
+  "taint": false
+ },
+ {
+  "id": "sentinel-k8s-roda-como-root",
+  "pacote": "core-iac",
+  "arquivo": "audit-rules/packs/core-iac/rules/sentinel-compose-k8s.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-250",
+  "taint": false
+ },
+ {
+  "id": "sentinel-k8s-hostpath",
+  "pacote": "core-iac",
+  "arquivo": "audit-rules/packs/core-iac/rules/sentinel-compose-k8s.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-668",
+  "taint": false
+ },
+ {
+  "id": "sentinel-k8s-capacidade-perigosa",
+  "pacote": "core-iac",
+  "arquivo": "audit-rules/packs/core-iac/rules/sentinel-compose-k8s.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-250",
+  "taint": false
+ },
+ {
+  "id": "sentinel-k8s-imagem-latest",
+  "pacote": "core-iac",
+  "arquivo": "audit-rules/packs/core-iac/rules/sentinel-compose-k8s.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-1357",
+  "taint": false
+ },
+ {
+  "id": "sentinel-docker-chmod-777",
+  "pacote": "core-iac",
+  "arquivo": "audit-rules/packs/core-iac/rules/sentinel-dockerfile-extras.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-732",
+  "taint": false
+ },
+ {
+  "id": "sentinel-docker-sudo",
+  "pacote": "core-iac",
+  "arquivo": "audit-rules/packs/core-iac/rules/sentinel-dockerfile-extras.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "CWE-250",
+  "taint": false
+ },
+ {
+  "id": "sentinel-docker-segredo-em-arg",
+  "pacote": "core-iac",
+  "arquivo": "audit-rules/packs/core-iac/rules/sentinel-dockerfile-extras.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-798",
+  "taint": false
+ },
+ {
+  "id": "sentinel-docker-expose-ssh",
+  "pacote": "core-iac",
+  "arquivo": "audit-rules/packs/core-iac/rules/sentinel-dockerfile-extras.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-668",
+  "taint": false
+ },
+ {
+  "id": "sentinel-docker-apt-sem-no-recommends",
+  "pacote": "core-iac",
+  "arquivo": "audit-rules/packs/core-iac/rules/sentinel-dockerfile-extras.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-docker-apt-update-sozinho",
+  "pacote": "core-iac",
+  "arquivo": "audit-rules/packs/core-iac/rules/sentinel-dockerfile-extras.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-docker-sem-user",
+  "pacote": "core-iac",
+  "arquivo": "audit-rules/packs/core-iac/rules/sentinel-dockerfile-user.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-250",
+  "taint": false
+ },
+ {
+  "id": "sentinel-docker-imagem-latest",
+  "pacote": "core-iac",
+  "arquivo": "audit-rules/packs/core-iac/rules/sentinel-dockerfile.yml",
+  "linguagens": [
+   "dockerfile"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-1357",
+  "taint": false
+ },
+ {
+  "id": "sentinel-docker-add-url",
+  "pacote": "core-iac",
+  "arquivo": "audit-rules/packs/core-iac/rules/sentinel-dockerfile.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-494",
+  "taint": false
+ },
+ {
+  "id": "sentinel-docker-curl-pipe-shell",
+  "pacote": "core-iac",
+  "arquivo": "audit-rules/packs/core-iac/rules/sentinel-dockerfile.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-494",
+  "taint": false
+ },
+ {
+  "id": "sentinel-docker-segredo-em-env",
+  "pacote": "core-iac",
+  "arquivo": "audit-rules/packs/core-iac/rules/sentinel-dockerfile.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-798",
+  "taint": false
+ },
+ {
+  "id": "sentinel-mybatis-cifrao-sql",
+  "pacote": "core-persistencia",
+  "arquivo": "audit-rules/packs/core-persistencia/rules/sentinel-mybatis-sql.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-89",
+  "taint": false
+ },
+ {
+  "id": "sentinel-jpa-log-sql-detalhado",
+  "pacote": "core-persistencia",
+  "arquivo": "audit-rules/packs/core-persistencia/rules/sentinel-persistencia-config.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-532",
+  "taint": false
+ },
+ {
+  "id": "sentinel-jpa-log-sql-detalhado-yaml",
+  "pacote": "core-persistencia",
+  "arquivo": "audit-rules/packs/core-persistencia/rules/sentinel-persistencia-config.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-532",
+  "taint": false
+ },
+ {
+  "id": "sentinel-jpa-n-mais-um",
+  "pacote": "core-persistencia",
+  "arquivo": "audit-rules/packs/core-persistencia/rules/sentinel-persistencia.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-1073",
+  "taint": false
+ },
+ {
+  "id": "sentinel-jpa-escrita-em-loop",
+  "pacote": "core-persistencia",
+  "arquivo": "audit-rules/packs/core-persistencia/rules/sentinel-persistencia.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-1073",
+  "taint": false
+ },
+ {
+  "id": "sentinel-jpa-findall-sem-paginacao",
+  "pacote": "core-persistencia",
+  "arquivo": "audit-rules/packs/core-persistencia/rules/sentinel-persistencia.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-770",
+  "taint": false
+ },
+ {
+  "id": "sentinel-jpa-pageable-unpaged",
+  "pacote": "core-persistencia",
+  "arquivo": "audit-rules/packs/core-persistencia/rules/sentinel-persistencia.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-770",
+  "taint": false
+ },
+ {
+  "id": "sentinel-jpa-muitos-para-um-eager-padrao",
+  "pacote": "core-persistencia",
+  "arquivo": "audit-rules/packs/core-persistencia/rules/sentinel-persistencia.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-1073",
+  "taint": false
+ },
+ {
+  "id": "sentinel-sql-select-estrela",
+  "pacote": "core-persistencia",
+  "arquivo": "audit-rules/packs/core-persistencia/rules/sentinel-persistencia.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "CWE-1049",
+  "taint": false
+ },
+ {
+  "id": "sentinel-sql-like-curinga-inicial",
+  "pacote": "core-persistencia",
+  "arquivo": "audit-rules/packs/core-persistencia/rules/sentinel-persistencia.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-1049",
+  "taint": false
+ },
+ {
+  "id": "sentinel-sql-order-by-aleatorio",
+  "pacote": "core-persistencia",
+  "arquivo": "audit-rules/packs/core-persistencia/rules/sentinel-persistencia.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-1049",
+  "taint": false
+ },
+ {
+  "id": "sentinel-sql-delete-sem-where",
+  "pacote": "core-persistencia",
+  "arquivo": "audit-rules/packs/core-persistencia/rules/sentinel-persistencia.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-754",
+  "taint": false
+ },
+ {
+  "id": "sentinel-sql-update-sem-where",
+  "pacote": "core-persistencia",
+  "arquivo": "audit-rules/packs/core-persistencia/rules/sentinel-persistencia.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-754",
+  "taint": false
+ },
+ {
+  "id": "sentinel-too-many-injections",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-god-object.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-1048",
+  "taint": false
+ },
+ {
+  "id": "sentinel-int-httpclient-sem-timeout",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-integracoes.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-400",
+  "taint": false
+ },
+ {
+  "id": "sentinel-int-httprequest-sem-timeout",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-integracoes.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-400",
+  "taint": false
+ },
+ {
+  "id": "sentinel-int-resttemplate-sem-timeout",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-integracoes.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-400",
+  "taint": false
+ },
+ {
+  "id": "sentinel-int-urlconnection-sem-timeout",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-integracoes.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-400",
+  "taint": false
+ },
+ {
+  "id": "sentinel-int-jdbc-driver-manager",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-integracoes.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-int-pool-ilimitado",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-integracoes.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-int-http-sem-tls",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-integracoes.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-319",
+  "taint": false
+ },
+ {
+  "id": "sentinel-int-fetch-sem-timeout",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-integracoes.yml",
+  "linguagens": [
+   "typescript",
+   "javascript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-400",
+  "taint": false
+ },
+ {
+  "id": "sentinel-int-axios-sem-timeout",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-integracoes.yml",
+  "linguagens": [
+   "typescript",
+   "javascript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-400",
+  "taint": false
+ },
+ {
+  "id": "sentinel-java-catch-vazio",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-java-clean-code.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-390",
+  "taint": false
+ },
+ {
+  "id": "sentinel-java-catch-throwable",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-java-clean-code.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-java-retorna-null-colecao",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-java-clean-code.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-java-autowired-campo",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-java-clean-code.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-java-estado-estatico-mutavel",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-java-clean-code.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-1058",
+  "taint": false
+ },
+ {
+  "id": "sentinel-java-string-igualdade-literal",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-java-clean-code.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-597",
+  "taint": false
+ },
+ {
+  "id": "sentinel-java-transactional-privado",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-java-clean-code.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-java-log-concatenado",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-java-clean-code.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-java-thread-manual",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-java-clean-code.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-java-service-locator",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-java-clean-code.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-java-singleton-manual",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-java-clean-code.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-java-simpledateformat-estatico",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-java-clean-code.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-362",
+  "taint": false
+ },
+ {
+  "id": "sentinel-comentario-pendencia",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-java-clean-code.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-codigo-comentado",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-java-clean-code.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-mem-threadlocal-sem-remove",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-memoria-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-401",
+  "taint": false
+ },
+ {
+  "id": "sentinel-mem-colecao-estatica",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-memoria-java.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-401",
+  "taint": false
+ },
+ {
+  "id": "sentinel-mem-cache-sem-limite",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-memoria-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-770",
+  "taint": false
+ },
+ {
+  "id": "sentinel-mem-executor-sem-shutdown",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-memoria-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-404",
+  "taint": false
+ },
+ {
+  "id": "sentinel-mem-new-thread-solto",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-memoria-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "INFO",
+  "cwe": "CWE-770",
+  "taint": false
+ },
+ {
+  "id": "sentinel-mem-leitura-total-de-arquivo",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-memoria-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "INFO",
+  "cwe": "CWE-789",
+  "taint": false
+ },
+ {
+  "id": "sentinel-obs-log-erro-sem-excecao",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-observabilidade.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-778",
+  "taint": false
+ },
+ {
+  "id": "sentinel-obs-excecao-relancada-sem-causa",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-observabilidade.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-778",
+  "taint": false
+ },
+ {
+  "id": "sentinel-obs-mdc-sem-limpeza",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-observabilidade.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "INFO",
+  "cwe": "CWE-532",
+  "taint": false
+ },
+ {
+  "id": "sentinel-obs-catch-console-sem-erro",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-observabilidade.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "INFO",
+  "cwe": "CWE-778",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ts-any-explicito",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-typescript.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ts-supressao-de-tipos",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-typescript.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ts-console-log",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-typescript.yml",
+  "linguagens": [
+   "typescript",
+   "javascript"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ts-catch-vazio",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-typescript.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-390",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ts-var",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-typescript.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ts-igualdade-frouxa",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-typescript.yml",
+  "linguagens": [
+   "typescript",
+   "javascript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-1025",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ts-export-let",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-typescript.yml",
+  "linguagens": [
+   "typescript",
+   "javascript"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ts-subscribe-aninhado",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-typescript.yml",
+  "linguagens": [
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ts-useeffect-async",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-typescript.yml",
+  "linguagens": [
+   "typescript",
+   "javascript"
+  ],
+  "severidade": "ERROR",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ts-react-key-indice",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-typescript.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ts-token-em-localstorage",
+  "pacote": "core-quality",
+  "arquivo": "audit-rules/packs/core-quality/rules/sentinel-typescript.yml",
+  "linguagens": [
+   "typescript",
+   "javascript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-922",
+  "taint": false
+ },
+ {
+  "id": "sentinel-quarkus-segredo-em-properties",
+  "pacote": "core-quarkus",
+  "arquivo": "audit-rules/packs/core-quarkus/rules/sentinel-quarkus-config.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-798",
+  "taint": false
+ },
+ {
+  "id": "sentinel-quarkus-inject-campo-privado",
+  "pacote": "core-quarkus",
+  "arquivo": "audit-rules/packs/core-quarkus/rules/sentinel-quarkus.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-quarkus-getenv-direto",
+  "pacote": "core-quarkus",
+  "arquivo": "audit-rules/packs/core-quarkus/rules/sentinel-quarkus.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-quarkus-await-indefinido",
+  "pacote": "core-quarkus",
+  "arquivo": "audit-rules/packs/core-quarkus/rules/sentinel-quarkus.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-quarkus-sleep-em-reativo",
+  "pacote": "core-quarkus",
+  "arquivo": "audit-rules/packs/core-quarkus/rules/sentinel-quarkus.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-quarkus-panache-consulta-concatenada",
+  "pacote": "core-quarkus",
+  "arquivo": "audit-rules/packs/core-quarkus/rules/sentinel-quarkus.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-89",
+  "taint": false
+ },
+ {
+  "id": "sentinel-quarkus-reflexao-nativa",
+  "pacote": "core-quarkus",
+  "arquivo": "audit-rules/packs/core-quarkus/rules/sentinel-quarkus.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-android-log-segredo",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-android.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-532",
+  "taint": false
+ },
+ {
+  "id": "sentinel-android-webview-url-do-intent",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-android.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-939",
+  "taint": true
+ },
+ {
+  "id": "sentinel-android-webview-javascript",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-android.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "INFO",
+  "cwe": "CWE-79",
+  "taint": false
+ },
+ {
+  "id": "sentinel-android-webview-acesso-arquivo",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-android.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-200",
+  "taint": false
+ },
+ {
+  "id": "sentinel-android-webview-texto-da-tela",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-android.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-79",
+  "taint": true
+ },
+ {
+  "id": "sentinel-android-manifest-allow-backup",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-android.yml",
+  "linguagens": [
+   "generic"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-921",
+  "taint": false
+ },
+ {
+  "id": "sentinel-android-manifest-cleartext",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-android.yml",
+  "linguagens": [
+   "generic"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-319",
+  "taint": false
+ },
+ {
+  "id": "sentinel-android-manifest-exported",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-android.yml",
+  "linguagens": [
+   "generic"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-926",
+  "taint": false
+ },
+ {
+  "id": "sentinel-android-modo-mundo",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-android.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-732",
+  "taint": false
+ },
+ {
+  "id": "sentinel-android-provider-openfile-caminho",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-android.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-22",
+  "taint": false
+ },
+ {
+  "id": "sentinel-android-classloader-armazenamento-externo",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-android.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-94",
+  "taint": false
+ },
+ {
+  "id": "sentinel-android-sqlite-concatenado",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-android.yml",
+  "linguagens": [
+   "java",
+   "kotlin"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-89",
+  "taint": false
+ },
+ {
+  "id": "sentinel-android-segredo-literal-comparado",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-android.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-798",
+  "taint": false
+ },
+ {
+  "id": "sentinel-android-prefs-senha-em-claro",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-android.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-312",
+  "taint": false
+ },
+ {
+  "id": "sentinel-android-manifest-intent-filter-implicito",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-android.yml",
+  "linguagens": [
+   "generic"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-926",
+  "taint": false
+ },
+ {
+  "id": "sentinel-crypto-hash-fraco",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-crypto.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-328",
+  "taint": false
+ },
+ {
+  "id": "sentinel-crypto-cifra-fraca",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-crypto.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-327",
+  "taint": false
+ },
+ {
+  "id": "sentinel-crypto-random-previsivel",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-crypto.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-338",
+  "taint": false
+ },
+ {
+  "id": "sentinel-desserializacao-insegura",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-crypto.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-502",
+  "taint": false
+ },
+ {
+  "id": "sentinel-crypto-random-servidor",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-crypto.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "INFO",
+  "cwe": "CWE-330",
+  "taint": false
+ },
+ {
+  "id": "sentinel-crypto-random-nextbytes",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-crypto.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-330",
+  "taint": false
+ },
+ {
+  "id": "sentinel-crypto-chave-fixa-no-codigo",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-crypto.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-321",
+  "taint": false
+ },
+ {
+  "id": "sentinel-crypto-iv-fixo",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-crypto.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-329",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ejs-saida-sem-escape",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-ejs.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-79",
+  "taint": false
+ },
+ {
+  "id": "sentinel-xxe-outros-parsers",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-hardening-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-611",
+  "taint": false
+ },
+ {
+  "id": "sentinel-snakeyaml-construtor-padrao",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-hardening-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-502",
+  "taint": false
+ },
+ {
+  "id": "sentinel-script-engine-eval-dinamico",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-hardening-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-94",
+  "taint": false
+ },
+ {
+  "id": "sentinel-arquivo-temporario-inseguro",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-hardening-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-377",
+  "taint": false
+ },
+ {
+  "id": "sentinel-session-fixation-desligada",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-hardening-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-384",
+  "taint": false
+ },
+ {
+  "id": "sentinel-chave-assimetrica-curta",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-hardening-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-326",
+  "taint": false
+ },
+ {
+  "id": "sentinel-postmessage-origem-curinga",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-hardening-web.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-346",
+  "taint": false
+ },
+ {
+  "id": "sentinel-message-listener-sem-origem",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-hardening-web.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-346",
+  "taint": false
+ },
+ {
+  "id": "sentinel-sql-injection",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-injection.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-89",
+  "taint": true
+ },
+ {
+  "id": "sentinel-command-injection",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-injection.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-78",
+  "taint": true
+ },
+ {
+  "id": "sentinel-command-injection-requisicao",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-injection.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-78",
+  "taint": true
+ },
+ {
+  "id": "sentinel-command-injection-variable",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-injection.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-78",
+  "taint": false
+ },
+ {
+  "id": "sentinel-command-injection-shell",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-injection.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-78",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ldap-injection",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-injection.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-90",
+  "taint": true
+ },
+ {
+  "id": "sentinel-xpath-injection",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-injection.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-643",
+  "taint": true
+ },
+ {
+  "id": "sentinel-xxe-parser-xml",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-java-extras.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-611",
+  "taint": false
+ },
+ {
+  "id": "sentinel-spel-injection",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-java-extras.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-917",
+  "taint": false
+ },
+ {
+  "id": "sentinel-open-redirect",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-java-extras.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-601",
+  "taint": false
+ },
+ {
+  "id": "sentinel-forward-nao-validado",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-java-extras.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-552",
+  "taint": true
+ },
+ {
+  "id": "sentinel-jackson-default-typing",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-java-extras.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-502",
+  "taint": false
+ },
+ {
+  "id": "sentinel-open-redirect-spring",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-java-extras.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-601",
+  "taint": false
+ },
+ {
+  "id": "sentinel-senha-comparada-com-literal",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-java-extras.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-798",
+  "taint": false
+ },
+ {
+  "id": "sentinel-zip-slip",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-java-extras.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-22",
+  "taint": false
+ },
+ {
+  "id": "sentinel-crossorigin-aberto",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-java-extras.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-942",
+  "taint": false
+ },
+ {
+  "id": "sentinel-log-dado-sensivel",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-java-extras.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-532",
+  "taint": false
+ },
+ {
+  "id": "sentinel-senha-fixa-no-codigo",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-java-extras.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-798",
+  "taint": false
+ },
+ {
+  "id": "sentinel-system-exit",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-java-extras.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-382",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cookie-sem-secure",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-java-extras.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-614",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cookie-secure-desligado",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-java-extras.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-614",
+  "taint": false
+ },
+ {
+  "id": "sentinel-xstream-qualquer-tipo",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-java-extras.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-502",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ssti-modelo-variavel",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-java-extras.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-1336",
+  "taint": false
+ },
+ {
+  "id": "sentinel-fastjson-autotype",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-java-extras.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-502",
+  "taint": false
+ },
+ {
+  "id": "sentinel-classloader-define-classe",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-java-extras.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-470",
+  "taint": false
+ },
+ {
+  "id": "sentinel-ssrf-url-do-parametro",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-java-extras.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-918",
+  "taint": false
+ },
+ {
+  "id": "sentinel-log-segredo-js",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-logs.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-532",
+  "taint": false
+ },
+ {
+  "id": "sentinel-log-injection",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-logs.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-117",
+  "taint": true
+ },
+ {
+  "id": "sentinel-node-sql-injection",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-89",
+  "taint": true
+ },
+ {
+  "id": "sentinel-node-prisma-raw-unsafe",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-89",
+  "taint": true
+ },
+ {
+  "id": "sentinel-node-sqlite-sql-dinamico",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-89",
+  "taint": true
+ },
+ {
+  "id": "sentinel-node-nosql-where",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-943",
+  "taint": true
+ },
+ {
+  "id": "sentinel-node-eval-requisicao",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-95",
+  "taint": true
+ },
+ {
+  "id": "sentinel-node-eval-dinamico",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-95",
+  "taint": false
+ },
+ {
+  "id": "sentinel-node-function-dinamico",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-95",
+  "taint": false
+ },
+ {
+  "id": "sentinel-node-xpath-injection",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-643",
+  "taint": false
+ },
+ {
+  "id": "sentinel-node-ldap-injection",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-90",
+  "taint": true
+ },
+ {
+  "id": "sentinel-node-open-redirect",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-601",
+  "taint": true
+ },
+ {
+  "id": "sentinel-node-path-traversal",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-22",
+  "taint": true
+ },
+ {
+  "id": "sentinel-node-ssrf",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-918",
+  "taint": true
+ },
+ {
+  "id": "sentinel-node-hash-fraco",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-328",
+  "taint": false
+ },
+ {
+  "id": "sentinel-node-xxe",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-611",
+  "taint": false
+ },
+ {
+  "id": "sentinel-node-command-injection",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-78",
+  "taint": true
+ },
+ {
+  "id": "sentinel-node-exec-dinamico",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-78",
+  "taint": false
+ },
+ {
+  "id": "sentinel-node-desserializacao",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-502",
+  "taint": true
+ },
+ {
+  "id": "sentinel-node-cookie-sem-flags",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-1004",
+  "taint": false
+ },
+ {
+  "id": "sentinel-node-jwt-sem-algoritmo",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-347",
+  "taint": false
+ },
+ {
+  "id": "sentinel-node-jwt-expiracao-ignorada",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-613",
+  "taint": false
+ },
+ {
+  "id": "sentinel-node-jwt-algoritmo-none",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-347",
+  "taint": false
+ },
+ {
+  "id": "sentinel-node-math-random-segredo",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-338",
+  "taint": false
+ },
+ {
+  "id": "sentinel-node-sql-concatenado",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-89",
+  "taint": true
+ },
+ {
+  "id": "sentinel-node-nosql-operador",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-943",
+  "taint": true
+ },
+ {
+  "id": "sentinel-node-prototype-pollution",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-1321",
+  "taint": false
+ },
+ {
+  "id": "sentinel-node-regexp-da-requisicao",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-1333",
+  "taint": true
+ },
+ {
+  "id": "sentinel-node-xss-refletido",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-79",
+  "taint": true
+ },
+ {
+  "id": "sentinel-node-mass-assignment",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-915",
+  "taint": false
+ },
+ {
+  "id": "sentinel-node-mass-assignment-campo",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-915",
+  "taint": false
+ },
+ {
+  "id": "sentinel-node-session-secret-literal",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-798",
+  "taint": false
+ },
+ {
+  "id": "sentinel-node-nosql-where-concatenado",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-node.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-943",
+  "taint": false
+ },
+ {
+  "id": "sentinel-owasp-a01-endpoint-sem-autorizacao",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-owasp-a01.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-284",
+  "taint": false
+ },
+ {
+  "id": "sentinel-api-ssrf",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-owasp-api.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-918",
+  "taint": true
+ },
+ {
+  "id": "sentinel-api-path-traversal",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-owasp-api.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-22",
+  "taint": true
+ },
+ {
+  "id": "sentinel-api-cors-wildcard",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-owasp-api.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-942",
+  "taint": false
+ },
+ {
+  "id": "sentinel-api-cors-aberto-js",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-owasp-api.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-942",
+  "taint": false
+ },
+ {
+  "id": "sentinel-api-csrf-disabled",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-owasp-api.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-352",
+  "taint": false
+ },
+ {
+  "id": "sentinel-api-tls-validation-disabled",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-owasp-api.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-295",
+  "taint": false
+ },
+ {
+  "id": "sentinel-api-jwt-sem-verificacao",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-owasp-api.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-347",
+  "taint": false
+ },
+ {
+  "id": "sentinel-api-jwt-chave-fixa-js",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-owasp-api.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-798",
+  "taint": false
+ },
+ {
+  "id": "sentinel-api-jwt-segredo-padrao-js",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-owasp-api.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-1188",
+  "taint": false
+ },
+ {
+  "id": "sentinel-api-jwt-chave-fixa",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-owasp-api.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-798",
+  "taint": false
+ },
+ {
+  "id": "sentinel-taint-sql-parametro-http",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-taint.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-89",
+  "taint": true
+ },
+ {
+  "id": "sentinel-taint-html-parametro-url",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-taint.yml",
+  "linguagens": [
+   "typescript",
+   "javascript"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-79",
+  "taint": true
+ },
+ {
+  "id": "sentinel-servlet-path-traversal",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-taint.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-22",
+  "taint": true
+ },
+ {
+  "id": "sentinel-resource-path-concatenado",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-taint.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-22",
+  "taint": true
+ },
+ {
+  "id": "sentinel-servlet-trust-boundary",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-taint.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-501",
+  "taint": true
+ },
+ {
+  "id": "sentinel-xss-jsp-unescaped-output",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-xss.yml",
+  "linguagens": [
+   "generic"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-79",
+  "taint": false
+ },
+ {
+  "id": "sentinel-xss-response-write",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-xss.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-79",
+  "taint": true
+ },
+ {
+  "id": "sentinel-xss-inner-html",
+  "pacote": "core-security",
+  "arquivo": "audit-rules/packs/core-security/rules/sentinel-xss.yml",
+  "linguagens": [
+   "javascript",
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-79",
+  "taint": false
+ },
+ {
+  "id": "sentinel-camadas-controller-usa-repository",
+  "pacote": "core-spring",
+  "arquivo": "audit-rules/packs/core-spring/rules/sentinel-camadas-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-camadas-controller-expoe-entidade",
+  "pacote": "core-spring",
+  "arquivo": "audit-rules/packs/core-spring/rules/sentinel-camadas-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-spring-actuator-boot1-sem-seguranca",
+  "pacote": "core-spring",
+  "arquivo": "audit-rules/packs/core-spring/rules/sentinel-spring-actuator-boot1.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-200",
+  "taint": false
+ },
+ {
+  "id": "sentinel-spring-boot1-actuator-aberto-por-padrao",
+  "pacote": "core-spring",
+  "arquivo": "audit-rules/packs/core-spring/rules/sentinel-spring-actuator-boot1.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-200",
+  "taint": false
+ },
+ {
+  "id": "sentinel-spring-requestmapping-sem-method",
+  "pacote": "core-spring",
+  "arquivo": "audit-rules/packs/core-spring/rules/sentinel-spring-codigo.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-352",
+  "taint": false
+ },
+ {
+  "id": "sentinel-spring-requestbody-sem-valid",
+  "pacote": "core-spring",
+  "arquivo": "audit-rules/packs/core-spring/rules/sentinel-spring-codigo.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-20",
+  "taint": false
+ },
+ {
+  "id": "sentinel-spring-permitall-geral",
+  "pacote": "core-spring",
+  "arquivo": "audit-rules/packs/core-spring/rules/sentinel-spring-codigo.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-862",
+  "taint": false
+ },
+ {
+  "id": "sentinel-spring-frameoptions-desligado",
+  "pacote": "core-spring",
+  "arquivo": "audit-rules/packs/core-spring/rules/sentinel-spring-codigo.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-1021",
+  "taint": false
+ },
+ {
+  "id": "sentinel-spring-fetch-eager",
+  "pacote": "core-spring",
+  "arquivo": "audit-rules/packs/core-spring/rules/sentinel-spring-codigo.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-spring-entidade-com-data",
+  "pacote": "core-spring",
+  "arquivo": "audit-rules/packs/core-spring/rules/sentinel-spring-codigo.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-spring-print-stack-trace",
+  "pacote": "core-spring",
+  "arquivo": "audit-rules/packs/core-spring/rules/sentinel-spring-codigo.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "INFO",
+  "cwe": "CWE-209",
+  "taint": false
+ },
+ {
+  "id": "sentinel-spring-actuator-exposto",
+  "pacote": "core-spring",
+  "arquivo": "audit-rules/packs/core-spring/rules/sentinel-spring-config.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-200",
+  "taint": false
+ },
+ {
+  "id": "sentinel-spring-actuator-exposto-yaml",
+  "pacote": "core-spring",
+  "arquivo": "audit-rules/packs/core-spring/rules/sentinel-spring-config.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-200",
+  "taint": false
+ },
+ {
+  "id": "sentinel-spring-h2-console",
+  "pacote": "core-spring",
+  "arquivo": "audit-rules/packs/core-spring/rules/sentinel-spring-config.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-489",
+  "taint": false
+ },
+ {
+  "id": "sentinel-spring-senha-em-properties",
+  "pacote": "core-spring",
+  "arquivo": "audit-rules/packs/core-spring/rules/sentinel-spring-config.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-798",
+  "taint": false
+ },
+ {
+  "id": "sentinel-spring-ddl-auto-perigoso",
+  "pacote": "core-spring",
+  "arquivo": "audit-rules/packs/core-spring/rules/sentinel-spring-config.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-spring-open-in-view",
+  "pacote": "core-spring",
+  "arquivo": "audit-rules/packs/core-spring/rules/sentinel-spring-config.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-spring-show-sql",
+  "pacote": "core-spring",
+  "arquivo": "audit-rules/packs/core-spring/rules/sentinel-spring-config.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-vue-v-html",
+  "pacote": "core-vue",
+  "arquivo": "audit-rules/packs/core-vue/rules/sentinel-vue.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-79",
+  "taint": false
+ },
+ {
+  "id": "sentinel-vue-v-for-sem-key",
+  "pacote": "core-vue",
+  "arquivo": "audit-rules/packs/core-vue/rules/sentinel-vue.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-vue-v-if-com-v-for",
+  "pacote": "core-vue",
+  "arquivo": "audit-rules/packs/core-vue/rules/sentinel-vue.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-vue-reactive-desestruturado",
+  "pacote": "core-vue",
+  "arquivo": "audit-rules/packs/core-vue/rules/sentinel-vue.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-vue-link-javascript",
+  "pacote": "core-vue",
+  "arquivo": "audit-rules/packs/core-vue/rules/sentinel-vue.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "ERROR",
+  "cwe": "CWE-79",
+  "taint": false
+ },
+ {
+  "id": "sentinel-vue-target-blank-sem-rel",
+  "pacote": "core-vue",
+  "arquivo": "audit-rules/packs/core-vue/rules/sentinel-vue.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-1022",
+  "taint": false
+ },
+ {
+  "id": "sentinel-vue-options-api-mixins",
+  "pacote": "core-vue",
+  "arquivo": "audit-rules/packs/core-vue/rules/sentinel-vue.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-vue-define-props-sem-tipo",
+  "pacote": "core-vue",
+  "arquivo": "audit-rules/packs/core-vue/rules/sentinel-vue.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cert-interrupted-engolida",
+  "pacote": "java-cert-sonar",
+  "arquivo": "audit-rules/packs/java-cert-sonar/rules/sentinel-cert-sonar-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cert-catch-npe",
+  "pacote": "java-cert-sonar",
+  "arquivo": "audit-rules/packs/java-cert-sonar/rules/sentinel-cert-sonar-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-395",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cert-throw-generico",
+  "pacote": "java-cert-sonar",
+  "arquivo": "audit-rules/packs/java-cert-sonar/rules/sentinel-cert-sonar-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-397",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cert-thread-run-direto",
+  "pacote": "java-cert-sonar",
+  "arquivo": "audit-rules/packs/java-cert-sonar/rules/sentinel-cert-sonar-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-572",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cert-thread-stop",
+  "pacote": "java-cert-sonar",
+  "arquivo": "audit-rules/packs/java-cert-sonar/rules/sentinel-cert-sonar-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cert-wait-fora-de-loop",
+  "pacote": "java-cert-sonar",
+  "arquivo": "audit-rules/packs/java-cert-sonar/rules/sentinel-cert-sonar-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cert-sync-em-string-ou-boxed",
+  "pacote": "java-cert-sonar",
+  "arquivo": "audit-rules/packs/java-cert-sonar/rules/sentinel-cert-sonar-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cert-retorno-ignorado-arquivo",
+  "pacote": "java-cert-sonar",
+  "arquivo": "audit-rules/packs/java-cert-sonar/rules/sentinel-cert-sonar-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-252",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cert-locale-implicito",
+  "pacote": "java-cert-sonar",
+  "arquivo": "audit-rules/packs/java-cert-sonar/rules/sentinel-cert-sonar-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cert-charset-implicito",
+  "pacote": "java-cert-sonar",
+  "arquivo": "audit-rules/packs/java-cert-sonar/rules/sentinel-cert-sonar-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cert-securerandom-semente-fixa",
+  "pacote": "java-cert-sonar",
+  "arquivo": "audit-rules/packs/java-cert-sonar/rules/sentinel-cert-sonar-java.yml",
+  "linguagens": [
+   "java"
+  ],
+  "severidade": "WARNING",
+  "cwe": "CWE-330",
+  "taint": false
+ },
+ {
+  "id": "sentinel-tsp-privado-sem-underscore",
+  "pacote": "ts-clean-code",
+  "arquivo": "audit-rules/packs/ts-clean-code/rules/sentinel-ts-padrao.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-tsp-publico-com-underscore",
+  "pacote": "ts-clean-code",
+  "arquivo": "audit-rules/packs/ts-clean-code/rules/sentinel-ts-padrao.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-tsp-metodo-sem-modificador",
+  "pacote": "ts-clean-code",
+  "arquivo": "audit-rules/packs/ts-clean-code/rules/sentinel-ts-padrao.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-tsp-enum-sem-sufixo",
+  "pacote": "ts-clean-code",
+  "arquivo": "audit-rules/packs/ts-clean-code/rules/sentinel-ts-padrao.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-tsp-interface-sem-padrao",
+  "pacote": "ts-clean-code",
+  "arquivo": "audit-rules/packs/ts-clean-code/rules/sentinel-ts-padrao.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-tsp-ciclo-de-vida-com-logica",
+  "pacote": "ts-clean-code",
+  "arquivo": "audit-rules/packs/ts-clean-code/rules/sentinel-ts-padrao.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-tsp-abreviacao",
+  "pacote": "ts-clean-code",
+  "arquivo": "audit-rules/packs/ts-clean-code/rules/sentinel-ts-padrao.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cct-parametros-demais",
+  "pacote": "ts-clean-code-labs42",
+  "arquivo": "audit-rules/packs/ts-clean-code-labs42/rules/sentinel-cct.yml",
+  "linguagens": [
+   "typescript"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cct-parametro-booleano",
+  "pacote": "ts-clean-code-labs42",
+  "arquivo": "audit-rules/packs/ts-clean-code-labs42/rules/sentinel-cct.yml",
+  "linguagens": [
+   "typescript"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cct-altera-parametro",
+  "pacote": "ts-clean-code-labs42",
+  "arquivo": "audit-rules/packs/ts-clean-code-labs42/rules/sentinel-cct.yml",
+  "linguagens": [
+   "typescript"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cct-escreve-no-global",
+  "pacote": "ts-clean-code-labs42",
+  "arquivo": "audit-rules/packs/ts-clean-code-labs42/rules/sentinel-cct.yml",
+  "linguagens": [
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cct-valor-padrao-com-ou",
+  "pacote": "ts-clean-code-labs42",
+  "arquivo": "audit-rules/packs/ts-clean-code-labs42/rules/sentinel-cct.yml",
+  "linguagens": [
+   "typescript"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cct-condicao-composta",
+  "pacote": "ts-clean-code-labs42",
+  "arquivo": "audit-rules/packs/ts-clean-code-labs42/rules/sentinel-cct.yml",
+  "linguagens": [
+   "typescript"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cct-verificacao-de-tipo-em-cadeia",
+  "pacote": "ts-clean-code-labs42",
+  "arquivo": "audit-rules/packs/ts-clean-code-labs42/rules/sentinel-cct.yml",
+  "linguagens": [
+   "typescript"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cct-codigo-inalcancavel",
+  "pacote": "ts-clean-code-labs42",
+  "arquivo": "audit-rules/packs/ts-clean-code-labs42/rules/sentinel-cct.yml",
+  "linguagens": [
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cct-laco-com-indice",
+  "pacote": "ts-clean-code-labs42",
+  "arquivo": "audit-rules/packs/ts-clean-code-labs42/rules/sentinel-cct.yml",
+  "linguagens": [
+   "typescript"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cct-throw-sem-error",
+  "pacote": "ts-clean-code-labs42",
+  "arquivo": "audit-rules/packs/ts-clean-code-labs42/rules/sentinel-cct.yml",
+  "linguagens": [
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cct-catch-so-registra",
+  "pacote": "ts-clean-code-labs42",
+  "arquivo": "audit-rules/packs/ts-clean-code-labs42/rules/sentinel-cct.yml",
+  "linguagens": [
+   "typescript"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cct-promessa-rejeicao-ignorada",
+  "pacote": "ts-clean-code-labs42",
+  "arquivo": "audit-rules/packs/ts-clean-code-labs42/rules/sentinel-cct.yml",
+  "linguagens": [
+   "typescript"
+  ],
+  "severidade": "WARNING",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cct-then-encadeado",
+  "pacote": "ts-clean-code-labs42",
+  "arquivo": "audit-rules/packs/ts-clean-code-labs42/rules/sentinel-cct.yml",
+  "linguagens": [
+   "typescript"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cct-parametro-callback",
+  "pacote": "ts-clean-code-labs42",
+  "arquivo": "audit-rules/packs/ts-clean-code-labs42/rules/sentinel-cct.yml",
+  "linguagens": [
+   "typescript"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cct-nome-sem-significado",
+  "pacote": "ts-clean-code-labs42",
+  "arquivo": "audit-rules/packs/ts-clean-code-labs42/rules/sentinel-cct.yml",
+  "linguagens": [
+   "typescript"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cct-numero-magico",
+  "pacote": "ts-clean-code-labs42",
+  "arquivo": "audit-rules/packs/ts-clean-code-labs42/rules/sentinel-cct.yml",
+  "linguagens": [
+   "typescript"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cct-import-relativo-profundo",
+  "pacote": "ts-clean-code-labs42",
+  "arquivo": "audit-rules/packs/ts-clean-code-labs42/rules/sentinel-cct.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cct-codigo-comentado",
+  "pacote": "ts-clean-code-labs42",
+  "arquivo": "audit-rules/packs/ts-clean-code-labs42/rules/sentinel-cct.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cct-comentario-de-diario",
+  "pacote": "ts-clean-code-labs42",
+  "arquivo": "audit-rules/packs/ts-clean-code-labs42/rules/sentinel-cct.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cct-marcador-de-posicao",
+  "pacote": "ts-clean-code-labs42",
+  "arquivo": "audit-rules/packs/ts-clean-code-labs42/rules/sentinel-cct.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ },
+ {
+  "id": "sentinel-cct-teste-sem-nome-descritivo",
+  "pacote": "ts-clean-code-labs42",
+  "arquivo": "audit-rules/packs/ts-clean-code-labs42/rules/sentinel-cct.yml",
+  "linguagens": [
+   "regex"
+  ],
+  "severidade": "INFO",
+  "cwe": "",
+  "taint": false
+ }
+]

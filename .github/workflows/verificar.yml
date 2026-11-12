@@ -1,0 +1,38 @@
+name: Verificar regras do Sentinel
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [regras-do-sentinel-mudaram]
+  schedule:
+    - cron: "17 6 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      # O Sentinel é privado: o secret SENTINEL_TOKEN precisa de leitura em joaopaulosistemas/sentinel (contents: read).
+      - uses: actions/checkout@v4
+        with:
+          repository: joaopaulosistemas/sentinel
+          token: ${{ secrets.SENTINEL_TOKEN }}
+          path: sentinel
+          sparse-checkout: audit-rules/packs
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: O inventário está em dia com as regras do Sentinel
+        run: |
+          python3 inventario.py sentinel
+          git diff --exit-code regras.json || { echo "::error title=Inventário::regras.json está desatualizado; rode inventario.py e comite"; exit 1; }
+      - name: Cada exemplo é pego (e o correto não é)
+        run: python3 verificar.py --sentinel sentinel --exigir-cobertura 19

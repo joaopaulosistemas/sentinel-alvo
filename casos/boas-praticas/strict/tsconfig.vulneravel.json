@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    // alvo: sentinel-boas-ts-strict-desligado
+    "strict": false
+  }
+}

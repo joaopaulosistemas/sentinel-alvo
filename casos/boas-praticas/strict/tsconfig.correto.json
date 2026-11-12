@@ -1,0 +1,6 @@
+// correto: sentinel-boas-ts-strict-desligado
+{
+  "compilerOptions": {
+    "strict": true
+  }
+}

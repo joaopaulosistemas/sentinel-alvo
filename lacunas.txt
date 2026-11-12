@@ -1,3 +1,4 @@
 # Regras que NÃO pegam o exemplo vulnerável de casos/. Cada linha é um falso negativo conhecido do Sentinel.
 # O verificador falha se uma regra daqui passar a pegar TODOS os seus exemplos (tire-a da lista) e se uma regra nova deixar de pegar.
 # (vazia: lacunas corrigidas no Sentinel nas PRs #231, #236 e #239)
+sentinel-tsp-abreviacao

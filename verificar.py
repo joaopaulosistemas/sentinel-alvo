@@ -6,8 +6,11 @@ Uso: verificar.py [--sentinel ../sentinel] [--exigir-cobertura N]
 Cada arquivo em casos/ marca o que espera:
   // alvo: <id-da-regra>      a linha seguinte tem que gerar achado dessa regra (vulnerável)
   // correto: <id-da-regra>   no arquivo todo, essa regra NÃO pode achar nada (falso positivo)
-Sai com 1 quando: uma regra marcada como alvo não dispara e não está em lacunas.txt; uma regra em lacunas.txt passou
-a disparar (tire-a da lista); há falso positivo; ou a cobertura (regras com caso / total) caiu abaixo do exigido.
+Duas listas registram o que já se sabe, para o verde não esconder nem inventar problema:
+  lacunas.txt             regras que não pegam o exemplo vulnerável (falso negativo conhecido)
+  falsos-positivos.txt    regras que acham algo no exemplo correto (falso positivo conhecido)
+Sai com 1 quando: uma regra marcada como alvo não dispara e não está em lacunas.txt; uma regra de uma das listas
+deixou de errar (tire-a da lista); há falso positivo fora de falsos-positivos.txt; ou a cobertura (regras com caso / total) caiu abaixo do exigido.
 """
 import argparse, glob, json, os, re, shutil, subprocess, sys, tempfile
 
@@ -64,6 +67,7 @@ def main():
     alvos, corretos = anotacoes(raiz)
     achados, erros = rodar(motor, a.sentinel, raiz)
     lacunas = lista(os.path.join(raiz, "lacunas.txt"))
+    fp_conhecidos = lista(os.path.join(raiz, "falsos-positivos.txt"))
 
     desconhecidas = sorted({i for i, _, _ in alvos + corretos} - regras)
     nao_pegou, ok = [], set()
@@ -73,6 +77,8 @@ def main():
         else:
             nao_pegou.append((rid, arq, n))
     falsos = sorted((i, f, l) for i, f, l in achados for rid, arq, _ in corretos if i == rid and f == arq)
+    fp_novos = [(i, f, l) for i, f, l in falsos if i not in fp_conhecidos]
+    fp_curados = sorted(fp_conhecidos - {i for i, _, _ in falsos})
     novas_lacunas = sorted({r for r, _, _ in nao_pegou} - lacunas)
     curadas = sorted(lacunas & ok)
     com_caso = {r for r, _, _ in alvos} & regras
@@ -81,12 +87,15 @@ def main():
     print(f"Motor: {os.path.basename(motor)} | regras no Sentinel: {len(regras)} | com caso: {cobertura} | pegas: {len(ok)}")
     for r in sorted(lacunas - ok):
         print(f"  lacuna conhecida (não pega o exemplo): {r}")
+    for r in sorted(fp_conhecidos & {i for i, _, _ in falsos}):
+        print(f"  falso positivo conhecido (acha o exemplo correto): {r}")
     status = 0
     for msg, itens in (
         ("regra inexistente no inventário (rode inventario.py)", desconhecidas),
         ("NÃO PEGOU o exemplo vulnerável", [f"{r} em {f}:{n}" for r, f, n in nao_pegou if r in novas_lacunas]),
-        ("FALSO POSITIVO no exemplo correto", [f"{i} em {f}:{l}" for i, f, l in falsos]),
+        ("FALSO POSITIVO no exemplo correto", [f"{i} em {f}:{l}" for i, f, l in fp_novos]),
         ("passou a pegar: tire de lacunas.txt", curadas),
+        ("deixou de dar falso positivo: tire de falsos-positivos.txt", fp_curados),
         ("erro ao carregar regra no motor", erros),
     ):
         for it in itens:

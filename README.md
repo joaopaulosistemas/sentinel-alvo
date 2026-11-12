@@ -23,15 +23,18 @@ MessageDigest md = MessageDigest.getInstance("MD5");
 | Situação | Significa |
 |---|---|
 | uma regra marcada `alvo` não dispara | falso negativo novo |
-| uma regra dispara num arquivo `correto` | falso positivo |
-| uma regra de `lacunas.txt` passou a disparar | lacuna corrigida: tire da lista |
+| uma regra dispara num arquivo `correto` e não está em `falsos-positivos.txt` | falso positivo novo |
+| uma regra de `lacunas.txt` ou `falsos-positivos.txt` deixou de errar | corrigida: tire da lista |
 | a cobertura cai abaixo de `--exigir-cobertura` | caso removido |
 
 ## Estado
 
-- 311 regras no Sentinel (`regras.json`, gerado por `inventario.py`); **19 com caso**, as outras 292 em `pendentes.txt`.
-- 17 pegam o exemplo. **2 lacunas reais** em `lacunas.txt`: `sentinel-zip-slip` (não reconhece
-  `ZipEntry e;` declarado antes do laço) e `sentinel-open-redirect-spring` (depende do nome da variável: `destino` passa).
+- 311 regras no Sentinel (`regras.json`, gerado por `inventario.py`); **52 com caso** (Java e TypeScript), as outras em `pendentes.txt`.
+- 48 pegam o exemplo vulnerável. **4 lacunas** (`lacunas.txt`): `zip-slip` (não vê `ZipEntry e;` declarado antes do laço),
+  `open-redirect-spring` (depende do nome da variável: `destino` passa), `api-jwt-chave-fixa` (não cobre
+  `signWith(alg, "literal")`) e `ssrf-url-do-parametro` (exige a URL como parâmetro do método).
+- **2 falsos positivos** (`falsos-positivos.txt`): `open-redirect` e `servlet-path-traversal` marcam o código com a
+  defesa recomendada (validar o destino; `getCanonicalFile()` + `startsWith`).
 
 ## Limites (leia antes de confiar no verde)
 
@@ -45,7 +48,7 @@ MessageDigest md = MessageDigest.getInstance("MD5");
 ```bash
 pip install -r requirements.txt
 python3 inventario.py ../sentinel        # atualiza regras.json
-python3 verificar.py --sentinel ../sentinel --exigir-cobertura 19
+python3 verificar.py --sentinel ../sentinel --exigir-cobertura 52
 ```
 
 No GitHub Actions o Sentinel é privado: crie o secret `SENTINEL_TOKEN` (leitura de conteúdo em

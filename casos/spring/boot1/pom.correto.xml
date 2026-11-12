@@ -1,0 +1,12 @@
+<!-- correto: sentinel-spring-boot1-actuator-aberto-por-padrao -->
+<project>
+  <parent>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.3.5</version>
+  </parent>
+  <dependencies>
+    <dependency>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+  </dependencies>
+</project>

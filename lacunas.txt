@@ -1,7 +1,3 @@
 # Regras que NÃO pegam o exemplo vulnerável de casos/. Cada linha é um falso negativo conhecido do Sentinel.
 # O verificador falha se uma regra daqui passar a pegar o exemplo (tire-a da lista) e se uma regra nova deixar de pegar.
-sentinel-zip-slip              # só vê `ZipEntry e = ...;` com valor ou parâmetro; `ZipEntry e; while ((e = zip.getNextEntry()) != null)` passa
-sentinel-open-redirect-spring  # depende do NOME da variável (url, redirect*, next, callback...); `destino`, `retorno`, `caminho` passam
-sentinel-api-jwt-chave-fixa    # só vê setSigningKey("...") e Algorithm.HMAC256("..."); `signWith(SignatureAlgorithm.HS256, "literal")` (jjwt 0.9) passa
-sentinel-ssrf-url-do-parametro # exige a URL como parâmetro String do método; `new URL(req.getParameter("url")).openStream()` passa
-sentinel-docker-imagem-latest  # regra na linguagem `dockerfile`: o motor só reconhece o arquivo chamado exatamente Dockerfile; `Dockerfile.prod` passa
+# (vazia: as 5 lacunas do primeiro lote foram corrigidas no Sentinel, PR #231)

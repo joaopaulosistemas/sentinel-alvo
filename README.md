@@ -31,14 +31,10 @@ MessageDigest md = MessageDigest.getInstance("MD5");
 
 - 311 regras no Sentinel (`regras.json`, gerado por `inventario.py`); **73 com caso** (Java, TypeScript, Dockerfile, Compose e
   Kubernetes), as outras 238 em `pendentes.txt`.
-- 68 pegam o exemplo vulnerável. **5 lacunas** (`lacunas.txt`):
-  - `zip-slip`: não vê `ZipEntry e;` declarado antes do laço;
-  - `open-redirect-spring`: depende do nome da variável (`destino` passa);
-  - `api-jwt-chave-fixa`: não cobre `signWith(alg, "literal")`;
-  - `ssrf-url-do-parametro`: exige a URL como parâmetro do método;
-  - `docker-imagem-latest`: só analisa o arquivo chamado exatamente `Dockerfile` (`Dockerfile.prod` passa).
-- **2 falsos positivos** (`falsos-positivos.txt`): `open-redirect` e `servlet-path-traversal` marcam o código com a
-  defesa recomendada (validar o destino; `getCanonicalFile()` + `startsWith`).
+- As 73 pegam o exemplo vulnerável e deixam o correto passar. `lacunas.txt` e `falsos-positivos.txt` estão vazias.
+- Histórico: o primeiro lote achou 5 lacunas (`zip-slip`, `open-redirect-spring`, `api-jwt-chave-fixa`,
+  `ssrf-url-do-parametro`, `docker-imagem-latest`) e 2 falsos positivos (`open-redirect`, `servlet-path-traversal`).
+  Foram corrigidos no Sentinel (PR #231) e este verificador confirmou a correção.
 
 ## Limites (leia antes de confiar no verde)
 

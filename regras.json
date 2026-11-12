@@ -743,7 +743,7 @@
   "pacote": "core-iac",
   "arquivo": "audit-rules/packs/core-iac/rules/sentinel-dockerfile.yml",
   "linguagens": [
-   "dockerfile"
+   "regex"
   ],
   "severidade": "WARNING",
   "cwe": "CWE-1357",

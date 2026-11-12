@@ -1,3 +1,2 @@
 # Regras que acham algo no exemplo CORRETO. Cada linha é um falso positivo conhecido do Sentinel.
-sentinel-open-redirect          # casa pelo nome do argumento (next, url...) e não enxerga a validação feita antes (startsWith("/"))
-sentinel-servlet-path-traversal # não reconhece a defesa recomendada: getCanonicalFile() + startsWith(base)
+# (vazia: os 2 falsos positivos do primeiro lote foram corrigidos no Sentinel, PR #231)
